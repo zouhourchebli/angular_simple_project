@@ -1,0 +1,47 @@
+<!-- <p>home works!</p> -->
+<!-- ngIf -->
+<!-- <img *ngIf="display== true" [src]="url" alt="">
+<button (click)=" display = !display">click me</button> -->
+
+<!--ngFor-->
+<!-- <h1 *ngFor="let item of cars"> {{item}}</h1> -->
+
+<!-- ngFor + ngIf -->
+<!-- <div *ngFor="let item of students" >
+    <ng-container *ngIf="item.age >20">
+        <h1>{{ item.name }}</h1>
+    <p> {{ item.age }}</p>
+    </ng-container>
+</div> -->
+
+<!-- ngSwitch -->
+<!-- <div [ngSwitch]="color">
+
+    <p *ngSwitchCase=" 'red' ">this is red</p>
+    <p *ngSwitchCase=" 'blue' ">this is blue</p>
+    <p *ngSwitchCase=" 'yellow' ">this is yellow</p>
+
+</div> -->
+
+<!-- ngStyle -->
+<!-- <div [ngStyle]=" { 'background-color': user.bg }">
+    <h1 [ngStyle]="{ 'color': user.color }">{{user.name }}</h1>
+    <p> {{ user.age }}</p>
+</div> -->
+
+<!--  ngClass  -->
+<!-- <div *ngFor="let item of students" [ngClass]="{ 'bg-danger': item.age <20, 'bg-success': item.age >20 }">
+    <h1>{{ item.name }}</h1>
+    <p> {{ item.age }}</p>
+</div>  -->
+
+<!-- ########################################################################## -->
+
+<app-header></app-header>
+
+<div class="container">
+    <h1 class="text-center mt-5 text-light"> Hero App</h1>
+
+    <router-outlet></router-outlet>
+</div>
+
